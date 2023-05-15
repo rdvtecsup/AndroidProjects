@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00BCD4"
+                android:text="3"
+                android:textColor="#FFEB3B" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="83dp"
+                android:layout_height="83dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00BCD4"
+                android:text="2"
+                android:textColor="#FFEB3B" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="83dp"
+                android:layout_height="83dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00BCD4"
+                android:text="1"
+                android:textColor="#FFEB3B" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="83dp"
+                android:layout_height="83dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00BCD4"
+                android:text="6"
+                android:textColor="#FFEB3B" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="83dp"
+                android:layout_height="83dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00BCD4"
+                android:text="5"
+                android:textColor="#FFEB3B" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="83dp"
+                android:layout_height="83dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00BCD4"
+                android:text="4"
+                android:textColor="#FFEB3B" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="83dp"
+                android:layout_height="83dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00BCD4"
+                android:text="9"
+                android:textColor="#FFEB3B" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="83dp"
+                android:layout_height="83dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00BCD4"
+                android:text="8"
+                android:textColor="#FFEB3B" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="83dp"
+                android:layout_height="83dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00BCD4"
+                android:text="7"
+                android:textColor="#FFEB3B" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

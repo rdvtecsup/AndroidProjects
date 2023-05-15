@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/lupa"
+        android:icon="@mipmap/ic_lupaws_foreground"
+        android:orderInCategory="2"
+        android:title="Lupa"
+        app:showAsAction="always" />
+    <item android:id="@+id/camara"
+        android:title="Camara"
+        android:icon="@android:drawable/ic_menu_camera"
+        app:showAsAction="always"
+        android:orderInCategory="1"/>
+    <group>
+        <item android:id="@+id/acercade"
+            android:title="Acerca de"
+            app:showAsAction="ifRoom"/>
+
+        <item android:id="@+id/ajustes"
+            android:title="Ajustes"
+            app:showAsAction="ifRoom"/>
+    </group>
+</menu>

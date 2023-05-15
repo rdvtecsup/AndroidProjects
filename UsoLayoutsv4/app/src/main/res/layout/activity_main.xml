@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TableRow>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:text="@string/alumno"
+            android:textColor="@color/primario"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:background="#4AAFFF"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:background="#8BC34A"
+            android:text="TextView" />
+    </TableRow>
+    <TableRow>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".01"
+            android:backgroundTint="#FF5722"
+            android:text="Button" />
+    </TableRow>
+    <TableRow>
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_weight=".01"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/tree"
+            tools:srcCompat="@tools:sample/avatars" />
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escribe aquí"
+        android:textStyle="bold"
+        android:translationX="10dp"
+        android:translationY="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.359" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:translationY="10dp"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="376dp"
+            android:layout_height="38dp"
+            android:translationX="10dp"
+            android:translationY="10dp"
+            tools:layout_editor_absoluteX="34dp"
+            tools:layout_editor_absoluteY="282dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="370dp"
+                android:layout_height="37dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:translationY="20dp"
+            tools:context=".MainActivity">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#03A9F4"
+                android:text="OK"
+                android:translationX="280dp"
+                tools:layout_editor_absoluteX="500dp"
+                tools:layout_editor_absoluteY="341dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F44336"
+                android:text="Cancel"
+                android:translationX="85dp"
+                tools:layout_editor_absoluteX="169dp"
+                tools:layout_editor_absoluteY="341dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

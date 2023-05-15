@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5403A9F4"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="PROMEDIO FINAL DE PROGRAMACION"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Nota promedio de Laboratorios:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editLabos"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:hint="Ingrese Promedio de Laboratorios"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Notas de Prácticas Calificadas:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="1">
+
+            <EditText
+                android:id="@+id/editPC1"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:hint="Ingrese Practica 1"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editPC2"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:hint="Ingrese Practica 2"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editPC3"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:hint="Ingrese Practica 3"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/editPC4"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:hint="Ingrese Practica 4"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:textSize="14sp" />
+        </GridLayout>
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:text="Calcular"
+            android:textColor="#FFEB3B"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Resultado:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgResultAprobado"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:src="@mipmap/aprobao"
+                android:layout_gravity="center_horizontal"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/imgResultDesaprobado"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:src="@mipmap/desaprobao"
+                android:layout_gravity="center_horizontal"
+                android:visibility="invisible" />
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
